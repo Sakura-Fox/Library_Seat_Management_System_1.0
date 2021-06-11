@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reportFace"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/jb_title"
+        android:layout_width="77dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="132dp"
+        android:text="举报"
+        android:textColor="#FFFFF0"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jb_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:text="区域"
+        android:textColor="#FFFFF0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jb_title"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <Spinner
+        android:id="@+id/jb_spinner1"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/jb_text1"
+        app:layout_constraintTop_toTopOf="@+id/jb_text1" />
+
+    <TextView
+        android:id="@+id/jb_text2"
+        android:layout_width="101dp"
+        android:layout_height="40dp"
+        android:text="座位号"
+        android:textColor="#FFFFF0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/jb_text1"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="@+id/jb_text1"
+        app:layout_constraintTop_toBottomOf="@+id/jb_text1"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <Spinner
+        android:id="@+id/jb_spinner2"
+        android:layout_width="229dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/jb_text2"
+        app:layout_constraintEnd_toEndOf="@+id/jb_spinner1"
+        app:layout_constraintStart_toStartOf="@+id/jb_spinner1"
+        app:layout_constraintTop_toTopOf="@+id/jb_text2" />
+
+    <TextView
+        android:id="@+id/jb_text3"
+        android:layout_width="101dp"
+        android:layout_height="40dp"
+        android:text="举报类型"
+        android:textColor="#FFFFF0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/jb_text2"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="@+id/jb_text2"
+        app:layout_constraintTop_toBottomOf="@+id/jb_text2"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <Spinner
+        android:id="@+id/jb_spinner3"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/jb_text3"
+        app:layout_constraintTop_toTopOf="@+id/jb_text3" />
+
+    <Button
+        android:id="@+id/jb_button"
+        android:layout_width="102dp"
+        android:layout_height="63dp"
+        android:text="举报"
+        android:textSize="24sp"
+        android:background="#FFE4E1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jb_spinner2"
+        app:layout_constraintVertical_bias="0.44" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

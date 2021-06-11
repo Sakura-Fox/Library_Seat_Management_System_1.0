@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="个人信息"
+            android:textSize="50sp"
+            android:textColor="#fffff0"
+            android:layout_marginLeft="20dp">
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_college"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="院系"
+            android:textSize="40sp"
+            android:textColor="#fffff0">
+        </TextView>
+
+        <EditText
+            android:id="@+id/Edit_college"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#fffff0"
+            android:layout_toEndOf="@id/text_college"
+            android:layout_toRightOf="@id/text_college">
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="邮箱"
+            android:textSize="40sp"
+            android:textColor="#fffff0">
+        </TextView>
+
+        <EditText
+            android:id="@+id/Edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#fffff0"
+            android:layout_toEndOf="@id/text_email"
+            android:layout_toRightOf="@id/text_email">
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="手机号"
+            android:textSize="40sp"
+            android:textColor="#fffff0">
+        </TextView>
+
+        <EditText
+            android:id="@+id/Edit_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#fffff0"
+            android:layout_toEndOf="@id/text_phoneNumber"
+            android:layout_toRightOf="@id/text_phoneNumber">
+        </EditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btn_sendPersonalInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textSize="24sp">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

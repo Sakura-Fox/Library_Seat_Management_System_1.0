@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/grey">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:gravity="start">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/logo">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/welcome"
+            android:textAlignment="center"
+            android:textSize = "40sp"
+            android:textColor="#fffff0"
+            android:gravity="center">
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/username"
+            android:textSize="40sp"
+            android:textColor="#fffff0">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/Edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#fffff0"
+            android:layout_toEndOf="@id/text_1"
+            android:layout_toRightOf="@id/text_1"
+            android:hint="请输入12位学号"
+            android:textColorHint="#fffff0">
+
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/password"
+            android:textSize="40sp"
+            android:textColor="#fffff0">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/Edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#fffff0"
+            android:layout_toEndOf="@id/text_2"
+            android:layout_toRightOf="@id/text_2"
+            android:hint="请输入密码"
+            android:textColorHint="#fffff0"
+            android:inputType="textPassword">
+
+        </EditText>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            tools:ignore ="ButtonStyle">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
